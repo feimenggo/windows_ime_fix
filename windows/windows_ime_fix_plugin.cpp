@@ -93,7 +93,7 @@ void WindowsImeFixPlugin::SetCompositionWindow(int left, int top, int right, int
         CANDIDATEFORM candidateForm = {0, CFS_EXCLUDE, {left, bottom}, {left, top, right, bottom}};
         ImmSetCandidateWindow(hIMC, &candidateForm);
         ImmReleaseContext(hwnd, hIMC);
-        std::cout << "修复候选框: left=" << left << "，top=" << top << "，right=" << right << "，bottom=" << bottom << std::endl;
+//        std::cout << "修复候选框: left=" << left << "，top=" << top << "，right=" << right << "，bottom=" << bottom << std::endl;
     }
 }
 
